@@ -1,4 +1,10 @@
+package api.POJO;
+
 public class CourierPOJO {
+
+    private String login;
+    private String password;
+    private  String firstName;
 
     public CourierPOJO(String login, String password, String firstName) {
         this.login = login;
@@ -9,6 +15,11 @@ public class CourierPOJO {
 
     public CourierPOJO() {
 
+    }
+
+     public CourierPOJO(String login, String password) {
+        this.login = login;
+        this.password = password;
     }
 
     public String getLogin() {
@@ -26,12 +37,9 @@ public class CourierPOJO {
         this.firstName = firstName;
     }
 
-    private String login;
-    private String password;
-
     public String getFirstName() {
         return firstName;
     }
 
-    private  String firstName;
+
 }
